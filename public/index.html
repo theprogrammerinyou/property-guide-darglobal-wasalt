@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ef">
+    <meta name="description" content="Ask questions about public property information from Dar Global and Wasalt.">
+    <title>Property Guide — Dar Global &amp; Wasalt</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Property Guide home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>PROPERTY<span class="brand-light">GUIDE</span></span>
+        </a>
+        <div class="topbar-note"><span class="status-dot"></span> Your real estate research companion</div>
+      </header>
+
+      <section class="layout" aria-label="Property Guide chatbot">
+        <aside class="intro">
+          <div class="eyebrow"><span class="eyebrow-line"></span> MIDDLE EAST REAL ESTATE</div>
+          <h1>Find clarity<br>in <span>every move.</span></h1>
+          <p class="intro-copy">A thoughtful guide to public information from Dar Global and Wasalt. Ask a question and get a grounded answer with sources.</p>
+
+          <div class="source-panel">
+            <div class="panel-label">YOUR SOURCES</div>
+            <a class="source-row" href="https://darglobal.co.uk/" target="_blank" rel="noreferrer">
+              <span class="source-icon dar-icon">D</span>
+              <span><strong>Dar Global</strong><small>Official website</small></span>
+              <span class="external" aria-hidden="true">↗</span>
+            </a>
+            <a class="source-row" href="https://wasalt.sa/en" target="_blank" rel="noreferrer">
+              <span class="source-icon wasalt-icon">W</span>
+              <span><strong>Wasalt</strong><small>Saudi property platform</small></span>
+              <span class="external" aria-hidden="true">↗</span>
+            </a>
+            <p class="source-note">Answers use collected public content. Follow source links for the latest details.</p>
+          </div>
+
+          <div class="disclaimer">
+            <span class="disclaimer-icon" aria-hidden="true">i</span>
+            <p>Property listings, prices, and availability can change. This assistant is informational, not investment or legal advice.</p>
+          </div>
+        </aside>
+
+        <section class="chat-card" aria-label="Chat">
+          <div class="chat-header">
+            <div class="assistant-avatar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="assistant-title"><strong>Property Guide</strong><span>Grounded in public sources</span></div>
+            <div class="model-badge"><span></span> AI ASSISTANT</div>
+          </div>
+
+          <div class="conversation" id="conversation" aria-live="polite">
+            <div class="welcome-message">
+              <div class="welcome-kicker">A BETTER WAY TO EXPLORE</div>
+              <h2>What would you like<br>to know?</h2>
+              <p>Ask me about Wasalt’s property guides and services, or what information is available from Dar Global.</p>
+              <div class="suggestions" aria-label="Suggested questions">
+                <button class="suggestion" type="button">What does Wasalt help people do?</button>
+                <button class="suggestion" type="button">Which Riyadh neighborhoods are in Wasalt’s villa guide?</button>
+                <button class="suggestion" type="button">What can you verify about Dar Global?</button>
+              </div>
+            </div>
+          </div>
+
+          <form class="composer" id="chat-form">
+            <label class="sr-only" for="question">Ask a question</label>
+            <textarea id="question" name="question" rows="1" maxlength="1800" placeholder="Ask about properties, locations or services…" required></textarea>
+            <button class="send-button" id="send-button" type="submit" aria-label="Send message">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+          <div class="composer-footer"><span>Answers may be AI-generated. Please verify important details.</span><span>Powered by OpenRouter</span></div>
+        </section>
+      </section>
+
+      <footer class="footer"><span>© 2026 Property Guide</span><span>Independent information assistant · Not affiliated with Dar Global or Wasalt</span></footer>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

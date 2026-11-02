@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: property-guide-darglobal-wasalt
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openrouter/free
