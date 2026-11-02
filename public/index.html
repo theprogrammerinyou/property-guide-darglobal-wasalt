@@ -65,13 +65,16 @@
             </div>
           </div>
 
-          <form class="composer" id="chat-form">
-            <label class="sr-only" for="question">Ask a question</label>
-            <textarea id="question" name="question" rows="1" maxlength="1800" placeholder="Ask about properties, locations or services…" required></textarea>
-            <button class="send-button" id="send-button" type="submit" aria-label="Send message">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </form>
+          <div class="composer-wrap">
+            <div class="autocomplete" id="autocomplete" role="listbox" aria-label="Official website suggestions" hidden></div>
+            <form class="composer" id="chat-form">
+              <label class="sr-only" for="question">Ask a question</label>
+              <textarea id="question" name="question" rows="1" maxlength="1800" placeholder="Ask about properties, locations or services…" autocomplete="off" aria-autocomplete="list" aria-controls="autocomplete" required></textarea>
+              <button class="send-button" id="send-button" type="submit" aria-label="Send message">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+          </div>
           <div class="composer-footer"><span>Answers may be AI-generated. Please verify important details.</span><span>Powered by OpenRouter</span></div>
         </section>
       </section>
